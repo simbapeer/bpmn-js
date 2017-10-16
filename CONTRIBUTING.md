@@ -9,7 +9,7 @@ Great to see you! Help us out by [filing bugs or feature requests](#working-with
     * [Creating an Issue](#creating-an-issue)
     * [Helping out](#helping-out)
 * [Contributing Improvements](#contributing-improvements)
-    * [Setting up the Project locally](#setting-up-the-project-locally)
+    * [Setting up the Project](#setting-up-the-project)
     * [Discussing Code Changes](#discussing-code-changes)
     * [Creating a Pull Request](#creating-a-pull-request)
 
