@@ -3,8 +3,8 @@
 var fs = require('fs');
 var path = require('path');
 
-var unique = require('lodash/array/unique');
-var sortBy = require('lodash/collection/sortBy');
+var unique = require('lodash-es/uniq');
+var sortBy = require('lodash-es/sortBy');
 
 function TranslationReporter() {
   process.env.TRANSLATIONS = 'enabled';
@@ -44,6 +44,6 @@ function TranslationReporter() {
   };
 }
 
-module.exports = {
+export default {
   'reporter:translation-reporter' : [ 'type', TranslationReporter ]
 };

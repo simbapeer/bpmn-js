@@ -10,7 +10,7 @@ var Diagram = require('diagram-js/lib/Diagram'),
     Importer = require('../../../lib/import/Importer'),
     Viewer = require('../../../lib/Viewer');
 
-var find = require('lodash/collection/find');
+var find = require('lodash-es/find');
 
 
 describe('import - Importer', function() {

@@ -4,8 +4,8 @@ require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash/object/pick'),
-    assign = require('lodash/object/assign');
+var pick = require('lodash-es/pick'),
+    assign = require('lodash-es/assign');
 
 var autoResizeModule = require('../../../../lib/features/auto-resize'),
     modelingModule = require('../../../../lib/features/modeling'),

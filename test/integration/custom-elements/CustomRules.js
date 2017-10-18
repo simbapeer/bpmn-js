@@ -1,6 +1,6 @@
 'use strict';
 
-var forEach = require('lodash/collection/forEach'),
+var forEach = require('lodash-es/forEach'),
     inherits = require('inherits');
 
 var RuleProvider = require('diagram-js/lib/features/rules/RuleProvider');

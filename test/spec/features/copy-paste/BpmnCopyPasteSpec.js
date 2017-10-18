@@ -10,10 +10,10 @@ var bpmnCopyPasteModule = require('../../../../lib/features/copy-paste'),
     modelingModule = require('../../../../lib/features/modeling'),
     coreModule = require('../../../../lib/core');
 
-var map = require('lodash/collection/map'),
-    filter = require('lodash/collection/filter'),
-    forEach = require('lodash/collection/forEach'),
-    uniq = require('lodash/array/uniq');
+var map = require('lodash-es/map'),
+    filter = require('lodash-es/filter'),
+    forEach = require('lodash-es/forEach'),
+    uniq = require('lodash-es/uniq');
 
 var DescriptorTree = require('./DescriptorTree');
 

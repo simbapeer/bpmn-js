@@ -1,6 +1,6 @@
 'use strict';
 
-var assign = require('lodash/object/assign'),
+var assign = require('lodash-es/assign'),
     inherits = require('inherits');
 
 var BpmnElementFactory = require('../../../lib/features/modeling/ElementFactory'),

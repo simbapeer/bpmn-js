@@ -1,6 +1,6 @@
 'use strict';
 
-var pick = require('lodash/object/pick');
+var pick = require('lodash-es/pick');
 
 var POSITION_ATTRS = [ 'x', 'y' ];
 

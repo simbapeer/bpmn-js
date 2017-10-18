@@ -2,7 +2,7 @@
 
 /* global bootstrapModeler, inject */
 
-var find = require('lodash/collection/find');
+var find = require('lodash-es/find');
 
 
 var modelingModule = require('../../../../lib/features/modeling'),

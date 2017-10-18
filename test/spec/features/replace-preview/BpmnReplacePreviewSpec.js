@@ -10,7 +10,7 @@ var replacePreviewModule = require('../../../../lib/features/replace-preview'),
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
-var assign = require('lodash/object/assign');
+var assign = require('lodash-es/assign');
 
 var svgAttr = require('tiny-svg/lib/attr'),
     svgClone = require('tiny-svg/lib/clone'),

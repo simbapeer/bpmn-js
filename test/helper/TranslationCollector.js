@@ -13,6 +13,6 @@ function collectTranslations(template, replacements) {
   return translate(template, replacements);
 }
 
-module.exports = {
+export default {
   translate: [ 'value', collectTranslations ]
 };

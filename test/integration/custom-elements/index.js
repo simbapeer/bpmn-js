@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   __init__: [ 'customRenderer', 'customRules', 'customUpdater' ],
   elementFactory: [ 'type', require('./CustomElementFactory') ],
   customRenderer: [ 'type', require('./CustomRenderer') ],
