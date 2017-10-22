@@ -1,21 +1,21 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper');
+var TestHelper = require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject, sinon */
 
-var bpmnCopyPasteModule = require('../../../../lib/features/copy-paste'),
-    copyPasteModule = require('diagram-js/lib/features/copy-paste'),
-    tooltipsModule = require('diagram-js/lib/features/tooltips'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var bpmnCopyPasteModule = require('../../../../lib/features/copy-paste').default,
+    copyPasteModule = require('diagram-js/lib/features/copy-paste').default,
+    tooltipsModule = require('diagram-js/lib/features/tooltips').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
-var map = require('lodash-es/map'),
-    filter = require('lodash-es/filter'),
-    forEach = require('lodash-es/forEach'),
-    uniq = require('lodash-es/uniq');
+var map = require('lodash-es/map').default,
+    filter = require('lodash-es/filter').default,
+    forEach = require('lodash-es/forEach').default,
+    uniq = require('lodash-es/uniq').default;
 
-var DescriptorTree = require('./DescriptorTree');
+var DescriptorTree = require('./DescriptorTree').default;
 
 var is = require('../../../../lib/util/ModelUtil').is;
 
@@ -579,7 +579,7 @@ describe('features/copy-paste', function() {
 
   describe('deep properties', function() {
 
-    var camundaPackage = require('../../../fixtures/json/model/camunda');
+    var camundaPackage = require('../../../fixtures/json/model/camunda').default;
 
     beforeEach(bootstrapModeler(clonePropertiesXML, {
       modules: testModules,

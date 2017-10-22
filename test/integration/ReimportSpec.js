@@ -1,8 +1,8 @@
 'use strict';
 
-var Modeler = require('../../lib/Modeler');
+var Modeler = require('../../lib/Modeler').default;
 
-var TestContainer = require('mocha-test-container-support');
+var TestContainer = require('mocha-test-container-support').default;
 
 function delay(fn) {
   setTimeout(fn, 10);

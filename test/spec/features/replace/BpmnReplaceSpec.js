@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    replaceModule = require('../../../../lib/features/replace'),
-    moveModule = require('diagram-js/lib/features/move'),
-    coreModule = require('../../../../lib/core');
+var modelingModule = require('../../../../lib/features/modeling').default,
+    replaceModule = require('../../../../lib/features/replace').default,
+    moveModule = require('diagram-js/lib/features/move').default,
+    coreModule = require('../../../../lib/core').default;
 
 var is = require('../../../../lib/util/ModelUtil').is,
     isExpanded = require('../../../../lib/util/DiUtil').isExpanded,
@@ -1205,7 +1205,7 @@ describe('features/replace - bpmn replace', function() {
   describe('properties', function() {
     var clonePropertiesXML = require('../../../fixtures/bpmn/features/replace/clone-properties.bpmn');
 
-    var camundaPackage = require('../../../fixtures/json/model/camunda');
+    var camundaPackage = require('../../../fixtures/json/model/camunda').default;
 
     beforeEach(bootstrapModeler(clonePropertiesXML, {
       modules: testModules,

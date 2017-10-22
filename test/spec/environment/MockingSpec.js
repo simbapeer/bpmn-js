@@ -1,29 +1,29 @@
 'use strict';
 
-require('../../TestHelper');
+require('../../TestHelper').default;
 
 /* global bootstrapViewer, inject */
 
-var Events = require('diagram-js/lib/core/EventBus');
+var EventBus = require('diagram-js/lib/core/EventBus').default;
 
-var Viewer = require('../../../lib/Viewer');
+var Viewer = require('../../../lib/Viewer').default;
 
 
 describe('environment - mocking', function() {
 
   var diagramXML = require('../../fixtures/bpmn/simple.bpmn');
 
-  var mockEvents, bootstrapCalled;
+  var mockEventBus, bootstrapCalled;
 
   beforeEach(bootstrapViewer(diagramXML, {
     modules: Viewer.prototype._modules
   }, function() {
-    mockEvents = new Events();
+    mockEventBus = new EventBus();
 
     bootstrapCalled = true;
 
     return {
-      eventBus: mockEvents
+      eventBus: mockEventBus
     };
   }));
 
@@ -34,7 +34,7 @@ describe('environment - mocking', function() {
 
   it('should use spy', inject(function(eventBus) {
 
-    expect(eventBus).to.eql(mockEvents);
+    expect(eventBus).to.eql(mockEventBus);
     expect(bootstrapCalled).to.be.true;
   }));
 

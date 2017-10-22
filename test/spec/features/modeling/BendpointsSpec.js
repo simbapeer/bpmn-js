@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    bendpointsModule = require('diagram-js/lib/features/bendpoints'),
-    coreModule = require('../../../../lib/core');
+var modelingModule = require('../../../../lib/features/modeling').default,
+    bendpointsModule = require('diagram-js/lib/features/bendpoints').default,
+    coreModule = require('../../../../lib/core').default;
 
 
 describe('features/bendpoints', function() {

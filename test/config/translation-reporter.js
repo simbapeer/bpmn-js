@@ -1,10 +1,10 @@
 'use strict';
 
-var fs = require('fs');
-var path = require('path');
+var fs = require('fs').default;
+var path = require('path').default;
 
-var unique = require('lodash-es/uniq');
-var sortBy = require('lodash-es/sortBy');
+var unique = require('lodash/uniq').default;
+var sortBy = require('lodash/sortBy').default;
 
 function TranslationReporter() {
   process.env.TRANSLATIONS = 'enabled';
@@ -44,6 +44,6 @@ function TranslationReporter() {
   };
 }
 
-export default {
+module.exports = {
   'reporter:translation-reporter' : [ 'type', TranslationReporter ]
 };

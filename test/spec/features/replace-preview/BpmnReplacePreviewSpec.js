@@ -1,20 +1,20 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var replacePreviewModule = require('../../../../lib/features/replace-preview'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var replacePreviewModule = require('../../../../lib/features/replace-preview').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
-var assign = require('lodash-es/assign');
+var assign = require('lodash-es/assign').default;
 
-var svgAttr = require('tiny-svg/lib/attr'),
-    svgClone = require('tiny-svg/lib/clone'),
-    innerSVG = require('tiny-svg/lib/innerSVG');
+var svgAttr = require('tiny-svg/lib/attr').default,
+    svgClone = require('tiny-svg/lib/clone').default,
+    innerSVG = require('tiny-svg/lib/innerSVG').default;
 
 
 describe('features/replace-preview', function() {

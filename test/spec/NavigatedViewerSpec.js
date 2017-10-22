@@ -1,8 +1,8 @@
 'use strict';
 
-require('../TestHelper');
+require('../TestHelper').default;
 
-var NavigatedViewer = require('../../lib/NavigatedViewer');
+var NavigatedViewer = require('../../lib/NavigatedViewer').default;
 
 
 describe('NavigatedViewer', function() {

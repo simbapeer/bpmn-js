@@ -1,19 +1,19 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
-var coreModule = require('../../../../lib/core'),
-    snappingModule = require('../../../../lib/features/snapping'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    createModule = require('diagram-js/lib/features/create'),
-    resizeModule = require('diagram-js/lib/features/resize'),
-    moveModule = require('diagram-js/lib/features/move'),
-    rulesModule = require('../../../../lib/features/rules'),
-    connectModule = require('diagram-js/lib/features/connect');
+var coreModule = require('../../../../lib/core').default,
+    snappingModule = require('../../../../lib/features/snapping').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    createModule = require('diagram-js/lib/features/create').default,
+    resizeModule = require('diagram-js/lib/features/resize').default,
+    moveModule = require('diagram-js/lib/features/move').default,
+    rulesModule = require('../../../../lib/features/rules').default,
+    connectModule = require('diagram-js/lib/features/connect').default;
 
 
 describe('features/snapping - BpmnSnapping', function() {

@@ -2,13 +2,13 @@
 
 var inherits = require('inherits');
 
-var BaseRenderer = require('diagram-js/lib/draw/BaseRenderer');
+var BaseRenderer = require('diagram-js/lib/draw/BaseRenderer').default;
 
 var componentsToPath = require('diagram-js/lib/util/RenderUtil').componentsToPath;
 
-var svgAppend = require('tiny-svg/lib/append'),
-    svgAttr = require('tiny-svg/lib/attr'),
-    svgCreate = require('tiny-svg/lib/create');
+var svgAppend = require('tiny-svg/lib/append').default,
+    svgAttr = require('tiny-svg/lib/attr').default,
+    svgCreate = require('tiny-svg/lib/create').default;
 
 
 function CustomRenderer(eventBus, styles) {

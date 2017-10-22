@@ -1,17 +1,17 @@
 'use strict';
 
-require('../../../../TestHelper');
+require('../../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+var modelingModule = require('../../../../../lib/features/modeling').default,
+    coreModule = require('../../../../../lib/core').default;
 
 
 var resizeTRBL = require('diagram-js/lib/features/resize/ResizeUtil').resizeTRBL;
 
-var pick = require('lodash-es/pick');
+var pick = require('lodash-es/pick').default;
 
 function getBounds(element) {
   return pick(element, [ 'x', 'y', 'width', 'height']);

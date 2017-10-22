@@ -1,14 +1,14 @@
 'use strict';
 
-require('../../../../TestHelper');
+require('../../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
 var is = require('../../../../../lib/util/ModelUtil').is,
-    find = require('lodash-es/find');
+    find = require('lodash-es/find').default;
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+var modelingModule = require('../../../../../lib/features/modeling').default,
+    coreModule = require('../../../../../lib/core').default;
 
 var canvasEvent = require('../../../../util/MockEvents').createCanvasEvent;
 

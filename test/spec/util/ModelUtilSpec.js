@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../TestHelper');
+require('../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('../../../lib/core'),
-    modelingModule = require('../../../lib/features/modeling');
+var coreModule = require('../../../lib/core').default,
+    modelingModule = require('../../../lib/features/modeling').default;
 
-var ModelUtil = require('../../../lib/util/ModelUtil');
+var ModelUtil = require('../../../lib/util/ModelUtil').default;
 
 
 describe('ModelUtil', function() {

@@ -1,12 +1,12 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var bpmnDistributeElements = require('../../../../lib/features/distribute-elements'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var bpmnDistributeElements = require('../../../../lib/features/distribute-elements').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 function last(arr) {
   return arr[arr.length - 1];

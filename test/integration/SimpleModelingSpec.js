@@ -1,8 +1,8 @@
 'use strict';
 
-var Modeler = require('../../lib/Modeler');
+var Modeler = require('../../lib/Modeler').default;
 
-var TestContainer = require('mocha-test-container-support');
+var TestContainer = require('mocha-test-container-support').default;
 
 describe('scenario - simple modeling', function() {
 

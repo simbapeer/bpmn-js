@@ -1,12 +1,12 @@
 'use strict';
 
-require('../../../../TestHelper');
+require('../../../../TestHelper').default;
 
 /* global inject, bootstrapModeler */
 
-var find = require('lodash-es/find');
+var find = require('lodash-es/find').default;
 
-var modelingModule = require('../../../../../lib/features/modeling');
+var modelingModule = require('../../../../../lib/features/modeling').default;
 
 
 describe('modeling/behavior - fix DataInputAssociation#targetRef', function() {

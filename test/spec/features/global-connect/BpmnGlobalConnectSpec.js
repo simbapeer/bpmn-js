@@ -2,9 +2,9 @@
 
 /* global bootstrapModeler, inject */
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    providerModule = require('../../../../lib/features/global-connect'),
-    coreModule = require('../../../../lib/core');
+var modelingModule = require('../../../../lib/features/modeling').default,
+    providerModule = require('../../../../lib/features/global-connect').default,
+    coreModule = require('../../../../lib/core').default;
 
 
 describe('features/bpmn-global-connect-provider', function() {

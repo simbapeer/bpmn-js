@@ -1,9 +1,9 @@
 'use strict';
 
-var forEach = require('lodash-es/forEach'),
+var forEach = require('lodash-es/forEach').default,
     inherits = require('inherits');
 
-var RuleProvider = require('diagram-js/lib/features/rules/RuleProvider');
+var RuleProvider = require('diagram-js/lib/features/rules/RuleProvider').default;
 
 var HIGH_PRIORITY = 1500;
 

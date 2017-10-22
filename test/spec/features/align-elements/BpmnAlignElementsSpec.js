@@ -1,12 +1,12 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var alignElementsModule = require('diagram-js/lib/features/align-elements'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var alignElementsModule = require('diagram-js/lib/features/align-elements').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 
 describe('features/align-elements', function() {

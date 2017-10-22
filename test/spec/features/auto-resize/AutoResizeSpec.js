@@ -1,16 +1,16 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash-es/pick'),
-    assign = require('lodash-es/assign');
+var pick = require('lodash-es/pick').default,
+    assign = require('lodash-es/assign').default;
 
-var autoResizeModule = require('../../../../lib/features/auto-resize'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    createModule = require('diagram-js/lib/features/create'),
-    coreModule = require('../../../../lib/core'),
+var autoResizeModule = require('../../../../lib/features/auto-resize').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    createModule = require('diagram-js/lib/features/create').default,
+    coreModule = require('../../../../lib/core').default,
     canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
 function getBounds(shape) {

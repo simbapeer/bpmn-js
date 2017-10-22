@@ -1,6 +1,6 @@
 'use strict';
 
-var any = require('lodash-es/some');
+var any = require('lodash-es/some').default;
 
 var ALLOWED_TYPES = {
   FailedJobRetryTimeCycle: [ 'bpmn:StartEvent', 'bpmn:BoundaryEvent', 'bpmn:IntermediateCatchEvent', 'bpmn:Activity' ],

@@ -1,15 +1,15 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
 
-var coreModule = require('lib/core'),
-    bendpointsModule = require('diagram-js/lib/features/bendpoints'),
-    modelingModule = require('lib/features/modeling'),
-    labelEditingModule = require('lib/features/label-editing'),
-    spaceTool = require('diagram-js/lib/features/space-tool');
+var coreModule = require('lib/core').default,
+    bendpointsModule = require('diagram-js/lib/features/bendpoints').default,
+    modelingModule = require('lib/features/modeling').default,
+    labelEditingModule = require('lib/features/label-editing').default,
+    spaceTool = require('diagram-js/lib/features/space-tool').default;
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 

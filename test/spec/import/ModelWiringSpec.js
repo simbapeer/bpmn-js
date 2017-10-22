@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../TestHelper');
+require('../../TestHelper').default;
 
 /* global bootstrapViewer, inject */
 

@@ -2,12 +2,12 @@
 
 /* global bootstrapModeler, inject */
 
-var Modeler = require('../../lib/Modeler');
+var Modeler = require('../../lib/Modeler').default;
 
 var canvasEvent = require('../util/MockEvents').createCanvasEvent;
 
 
-var customElementsModules = require('./custom-elements'),
+var customElementsModules = require('./custom-elements').default,
     noTouchInteractionModule = { touchInteractionEvents: ['value', null ] },
     modelerModules = Modeler.prototype._modules,
     customModules = [ customElementsModules, noTouchInteractionModule ];

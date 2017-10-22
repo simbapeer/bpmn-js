@@ -1,6 +1,6 @@
 'use strict';
 
-var pick = require('lodash-es/pick');
+var pick = require('lodash-es/pick').default;
 
 var BOUNDS_ATTRS = [ 'x', 'y', 'width', 'height' ],
     POSITION_ATTRS = [ 'x', 'y' ],

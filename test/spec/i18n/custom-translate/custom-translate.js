@@ -1,6 +1,6 @@
 'use strict';
 
-var translate = require('diagram-js/lib/i18n/translate/translate');
+var translate = require('diagram-js/lib/i18n/translate/translate').default;
 
 module.exports = function customTranslate(template, replacements) {
   if (template === 'Remove') {

@@ -1,13 +1,13 @@
 'use strict';
 
-var TestHelper = require('../helper');
+var TestHelper = require('../helper').default;
 
 var getCenter = require('diagram-js/lib/layout/LayoutUtil').getCenter;
 
-var isArray = require('lodash-es/isArray'),
-    map = require('lodash-es/map'),
-    pick = require('lodash-es/pick'),
-    assign = require('lodash-es/assign');
+var isArray = require('lodash-es/isArray').default,
+    map = require('lodash-es/map').default,
+    pick = require('lodash-es/pick').default,
+    assign = require('lodash-es/assign').default;
 
 
 function invoke(fn) {

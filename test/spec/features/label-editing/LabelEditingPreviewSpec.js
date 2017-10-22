@@ -3,10 +3,10 @@
 /* global bootstrapViewer, inject */
 
 
-var labelEditingModule = require('../../../../lib/features/label-editing'),
-    coreModule = require('../../../../lib/core'),
-    draggingModule = require('diagram-js/lib/features/dragging'),
-    modelingModule = require('diagram-js/lib/features/modeling');
+var labelEditingModule = require('../../../../lib/features/label-editing').default,
+    coreModule = require('../../../../lib/core').default,
+    draggingModule = require('diagram-js/lib/features/dragging').default,
+    modelingModule = require('diagram-js/lib/features/modeling').default;
 
 describe('features - label-editing preview', function() {
 

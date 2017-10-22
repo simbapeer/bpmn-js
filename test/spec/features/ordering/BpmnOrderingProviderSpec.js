@@ -8,8 +8,8 @@ var move = Helper.move,
     attach = Helper.attach,
     expectZOrder = Helper.expectZOrder;
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 
 describe('features/modeling - ordering', function() {

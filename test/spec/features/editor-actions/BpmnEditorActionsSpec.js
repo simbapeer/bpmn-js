@@ -1,19 +1,19 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash-es/pick');
+var pick = require('lodash-es/pick').default;
 
 var getBBox = require('diagram-js/lib/util/Elements').getBBox;
 
 var getParent = require('lib/features/modeling/util/ModelingUtil').getParent;
 
 
-var bpmnEditorActionsModule = require('../../../../lib/features/editor-actions'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var bpmnEditorActionsModule = require('../../../../lib/features/editor-actions').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 var basicXML = require('../../../fixtures/bpmn/nested-subprocesses.bpmn'),
     collaborationXML = require('../../../fixtures/bpmn/collaboration.bpmn');

@@ -1,10 +1,10 @@
 'use strict';
 
-var assign = require('lodash-es/assign'),
+var assign = require('lodash-es/assign').default,
     inherits = require('inherits');
 
-var BpmnElementFactory = require('../../../lib/features/modeling/ElementFactory'),
-    LabelUtil = require('../../../lib/util/LabelUtil');
+var BpmnElementFactory = require('../../../lib/features/modeling/ElementFactory').default,
+    LabelUtil = require('../../../lib/util/LabelUtil').default;
 
 
 function CustomElementFactory(injector) {

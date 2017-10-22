@@ -1,6 +1,6 @@
 'use strict';
 
-var forEach = require('lodash-es/forEach');
+var forEach = require('lodash-es/forEach').default;
 
 
 function DescriptorTree(tree) {

@@ -7,14 +7,14 @@ var connect = Helper.connect,
     move = Helper.move,
     reconnectEnd = Helper.reconnectEnd;
 
-var Modeler = require('../../../../../lib/Modeler');
+var Modeler = require('../../../../../lib/Modeler').default;
 
 
 /* global bootstrapModeler, inject */
 
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+var modelingModule = require('../../../../../lib/features/modeling').default,
+    coreModule = require('../../../../../lib/core').default;
 
 
 describe('features/modeling - layout', function() {

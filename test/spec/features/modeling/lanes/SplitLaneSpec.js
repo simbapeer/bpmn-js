@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../../../TestHelper');
+require('../../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var pick = require('lodash-es/pick');
+var pick = require('lodash-es/pick').default;
 
-var modelingModule = require('../../../../../lib/features/modeling'),
-    coreModule = require('../../../../../lib/core');
+var modelingModule = require('../../../../../lib/features/modeling').default,
+    coreModule = require('../../../../../lib/core').default;
 
 var getChildLanes = require('lib/features/modeling/util/LaneUtil').getChildLanes;
 

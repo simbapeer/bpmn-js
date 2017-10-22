@@ -93,10 +93,10 @@ module.exports = function(grunt) {
       builtins: false,
       insertGlobalVars: {
         process: function () {
-            return 'undefined';
+          return 'undefined';
         },
         Buffer: function () {
-            return 'undefined';
+          return 'undefined';
         }
       }
     };

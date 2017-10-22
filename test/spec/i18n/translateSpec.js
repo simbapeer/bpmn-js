@@ -3,16 +3,16 @@
 // skipping this file during translation extraction
 var skip = window.__env__ && window.__env__.TRANSLATIONS === 'enabled';
 
-require('test/TestHelper');
+require('test/TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('lib/core'),
-    translateModule = require('diagram-js/lib/i18n/translate'),
-    customTranslateModule = require('./custom-translate'),
-    modelingModule = require('lib/features/modeling'),
-    paletteModule = require('lib/features/palette'),
-    contextPadModule = require('lib/features/context-pad');
+var coreModule = require('lib/core').default,
+    translateModule = require('diagram-js/lib/i18n/translate').default,
+    customTranslateModule = require('./custom-translate').default,
+    modelingModule = require('lib/features/modeling').default,
+    paletteModule = require('lib/features/palette').default,
+    contextPadModule = require('lib/features/context-pad').default;
 
 var diagramXML = require('test/fixtures/bpmn/simple.bpmn');
 

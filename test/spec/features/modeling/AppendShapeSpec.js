@@ -2,11 +2,11 @@
 
 /* global bootstrapModeler, inject */
 
-var find = require('lodash-es/find');
+var find = require('lodash-es/find').default;
 
 
-var modelingModule = require('../../../../lib/features/modeling'),
-    coreModule = require('../../../../lib/core');
+var modelingModule = require('../../../../lib/features/modeling').default,
+    coreModule = require('../../../../lib/core').default;
 
 
 describe('features/modeling - append shape', function() {

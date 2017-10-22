@@ -1,11 +1,11 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support');
+var TestContainer = require('mocha-test-container-support').default;
 
-var coreModule = require('../../../../lib/core'),
-    editorActionsModule = require('../../../../lib/features/editor-actions'),
-    keyboardModule = require('../../../../lib/features/keyboard'),
-    modelingModule = require('../../../../lib/features/modeling');
+var coreModule = require('../../../../lib/core').default,
+    editorActionsModule = require('../../../../lib/features/editor-actions').default,
+    keyboardModule = require('../../../../lib/features/keyboard').default,
+    modelingModule = require('../../../../lib/features/modeling').default;
 
 var createKeyEvent = require('../../../util/KeyEvents').createKeyEvent;
 

@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../../TestHelper');
+require('../../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('../../../../lib/core'),
-    modelingModule = require('../../../../lib/features/modeling'),
-    moveModule = require('diagram-js/lib/features/move'),
-    snappingModule = require('../../../../lib/features/snapping');
+var coreModule = require('../../../../lib/core').default,
+    modelingModule = require('../../../../lib/features/modeling').default,
+    moveModule = require('diagram-js/lib/features/move').default,
+    snappingModule = require('../../../../lib/features/snapping').default;
 
 var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 

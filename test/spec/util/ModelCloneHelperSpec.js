@@ -1,16 +1,16 @@
 'use strict';
 
-require('../../TestHelper');
+require('../../TestHelper').default;
 
 /* global bootstrapModeler, inject */
 
-var coreModule = require('../../../lib/core');
+var coreModule = require('../../../lib/core').default;
 
-var ModelCloneHelper = require('../../../lib/util/model/ModelCloneHelper');
+var ModelCloneHelper = require('../../../lib/util/model/ModelCloneHelper').default;
 
-var camundaPackage = require('../../fixtures/json/model/camunda');
+var camundaPackage = require('../../fixtures/json/model/camunda').default;
 
-var camundaModdleModule = require('./camunda-moddle');
+var camundaModdleModule = require('./camunda-moddle').default;
 
 function getProp(element, property) {
   return element && element.$model.properties.get(element, property);
