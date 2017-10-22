@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../TestHelper').default;
+require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
@@ -8,7 +8,7 @@ var modelingModule = require('../../../../lib/features/modeling').default,
     paletteModule = require('../../../../lib/features/palette').default,
     coreModule = require('../../../../lib/core').default;
 
-var domQuery = require('min-dom/lib/query').default;
+var domQuery = require('min-dom/lib/query');
 
 
 describe('features/palette', function() {

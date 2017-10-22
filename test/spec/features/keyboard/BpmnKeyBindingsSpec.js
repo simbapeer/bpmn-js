@@ -1,6 +1,6 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support').default;
+var TestContainer = require('mocha-test-container-support');
 
 var coreModule = require('../../../../lib/core').default,
     editorActionsModule = require('../../../../lib/features/editor-actions').default,

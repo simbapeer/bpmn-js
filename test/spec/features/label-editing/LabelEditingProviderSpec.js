@@ -8,7 +8,7 @@ var labelEditingModule = require('../../../../lib/features/label-editing').defau
     draggingModule = require('diagram-js/lib/features/dragging').default,
     modelingModule = require('diagram-js/lib/features/modeling').default;
 
-var LabelUtil = require('../../../../lib/features/label-editing/LabelUtil').default;
+var LabelUtil = require('../../../../lib/features/label-editing/LabelUtil');
 
 var MEDIUM_LINE_HEIGHT = 14;
 

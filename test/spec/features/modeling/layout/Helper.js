@@ -1,4 +1,4 @@
-var TestHelper = require('../../../../TestHelper').default;
+var TestHelper = require('../../../../TestHelper');
 
 
 function connect(source, target, attrs) {

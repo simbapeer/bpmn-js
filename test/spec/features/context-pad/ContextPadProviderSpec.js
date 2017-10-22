@@ -1,10 +1,10 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper').default;
+var TestHelper = require('../../../TestHelper');
 
-var TestContainer = require('mocha-test-container-support').default;
+var TestContainer = require('mocha-test-container-support');
 
-var domQuery = require('min-dom/lib/query').default;
+var domQuery = require('min-dom/lib/query');
 
 var is = require('../../../../lib/util/ModelUtil').is;
 

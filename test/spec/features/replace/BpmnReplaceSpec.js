@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../TestHelper').default;
+require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
@@ -1205,7 +1205,7 @@ describe('features/replace - bpmn replace', function() {
   describe('properties', function() {
     var clonePropertiesXML = require('../../../fixtures/bpmn/features/replace/clone-properties.bpmn');
 
-    var camundaPackage = require('../../../fixtures/json/model/camunda').default;
+    var camundaPackage = require('../../../fixtures/json/model/camunda');
 
     beforeEach(bootstrapModeler(clonePropertiesXML, {
       modules: testModules,
@@ -1213,6 +1213,7 @@ describe('features/replace - bpmn replace', function() {
         camunda: camundaPackage
       }
     }));
+
 
     it('should copy properties', inject(function(elementRegistry, bpmnReplace) {
       // given

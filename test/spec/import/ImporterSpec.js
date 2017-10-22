@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../TestHelper').default;
+require('../../TestHelper');
 
 
-var TestContainer = require('mocha-test-container-support').default;
+var TestContainer = require('mocha-test-container-support');
 
 var Diagram = require('diagram-js/lib/Diagram').default,
-    BpmnModdle = require('bpmn-moddle').default,
-    Importer = require('../../../lib/import/Importer').default,
+    BpmnModdle = require('bpmn-moddle'),
+    Importer = require('../../../lib/import/Importer'),
     Viewer = require('../../../lib/Viewer').default;
 
 var find = require('lodash-es/find').default;

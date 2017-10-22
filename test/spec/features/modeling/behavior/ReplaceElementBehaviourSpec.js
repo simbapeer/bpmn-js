@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../../TestHelper').default;
+require('../../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
@@ -12,7 +12,7 @@ var replacePreviewModule = require('../../../../../lib/features/replace-preview'
 var is = require('../../../../../lib/util/ModelUtil').is,
     canvasEvent = require('../../../../util/MockEvents').createCanvasEvent;
 
-var domQuery = require('min-dom/lib/query').default;
+var domQuery = require('min-dom/lib/query');
 
 
 describe('features/modeling - move start event behavior', function() {

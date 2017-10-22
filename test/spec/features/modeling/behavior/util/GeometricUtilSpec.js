@@ -1,8 +1,8 @@
 'use strict';
 
-require('../../../../../TestHelper').default;
+require('../../../../../TestHelper');
 
-var GeometricUtil = require('lib/features/modeling/behavior/util/GeometricUtil').default;
+var GeometricUtil = require('lib/features/modeling/behavior/util/GeometricUtil');
 
 
 describe('modeling/behavior/util - GeometricUtil', function() {

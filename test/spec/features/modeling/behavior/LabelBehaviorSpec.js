@@ -1,13 +1,13 @@
 'use strict';
 
-require('../../../../TestHelper').default;
+require('../../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
 var modelingModule = require('../../../../../lib/features/modeling').default,
     coreModule = require('../../../../../lib/core').default;
 
-var LabelUtil = require('../../../../../lib/util/LabelUtil').default;
+var LabelUtil = require('../../../../../lib/util/LabelUtil');
 
 
 describe('behavior - LabelBehavior', function() {

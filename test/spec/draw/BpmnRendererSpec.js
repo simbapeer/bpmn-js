@@ -1,11 +1,11 @@
 'use strict';
 
-require('../../TestHelper').default;
+require('../../TestHelper');
 
 var coreModule = require('../../../lib/core').default,
     rendererModule = require('../../../lib/draw').default;
 
-var domQuery = require('min-dom/lib/query').default;
+var domQuery = require('min-dom/lib/query');
 
 /* global bootstrapViewer, bootstrapModeler, inject */
 

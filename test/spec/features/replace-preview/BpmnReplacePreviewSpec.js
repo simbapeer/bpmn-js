@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../TestHelper').default;
+require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
@@ -12,9 +12,9 @@ var canvasEvent = require('../../../util/MockEvents').createCanvasEvent;
 
 var assign = require('lodash-es/assign').default;
 
-var svgAttr = require('tiny-svg/lib/attr').default,
-    svgClone = require('tiny-svg/lib/clone').default,
-    innerSVG = require('tiny-svg/lib/innerSVG').default;
+var svgAttr = require('tiny-svg/lib/attr'),
+    svgClone = require('tiny-svg/lib/clone'),
+    innerSVG = require('tiny-svg/lib/innerSVG');
 
 
 describe('features/replace-preview', function() {

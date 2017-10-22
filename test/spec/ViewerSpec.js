@@ -1,6 +1,6 @@
 'use strict';
 
-var TestContainer = require('mocha-test-container-support').default;
+var TestContainer = require('mocha-test-container-support');
 
 var Diagram = require('diagram-js/lib/Diagram').default;
 
@@ -534,7 +534,7 @@ describe('Viewer', function() {
     });
 
 
-    var camundaPackage = require('../fixtures/json/model/camunda').default;
+    var camundaPackage = require('../fixtures/json/model/camunda');
 
     it('should provide custom moddle extensions', function(done) {
 
@@ -637,7 +637,7 @@ describe('Viewer', function() {
           additionalModdleDescriptors = {
             custom: require('../fixtures/json/model/custom')
           },
-          customOverride = require('../fixtures/json/model/custom-override').default;
+          customOverride = require('../fixtures/json/model/custom-override');
 
       function CustomViewer(options) {
         Viewer.call(this, options);

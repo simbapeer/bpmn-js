@@ -1,6 +1,6 @@
 'use strict';
 
-require('../../../TestHelper').default;
+require('../../../TestHelper');
 
 /* global bootstrapModeler, inject */
 
@@ -20,7 +20,12 @@ function getBounds(shape) {
 
 describe('features/auto-resize', function() {
 
-  var testModules = [ coreModule, modelingModule, autoResizeModule, createModule ];
+  var testModules = [
+    coreModule,
+    modelingModule,
+    autoResizeModule,
+    createModule
+  ];
 
 
   describe('participant', function() {

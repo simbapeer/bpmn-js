@@ -4,7 +4,7 @@
 
 var Modeler = require('../../../../lib/Modeler').default;
 
-var TestContainer = require('mocha-test-container-support').default;
+var TestContainer = require('mocha-test-container-support');
 
 var DELTA = 2;
 

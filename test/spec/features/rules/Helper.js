@@ -1,6 +1,6 @@
 'use strict';
 
-var TestHelper = require('../../../TestHelper').default;
+var TestHelper = require('../../../TestHelper');
 
 
 function expectCanConnect(source, target, rules) {

@@ -19,9 +19,9 @@
  * and perform custom bootstrapping (CSS, ...) in that utility.
  *
  * ```
- * var TestHelper = module.exports = require('bpmn-js/test/helper').default;
+ * var TestHelper = module.exports = require('bpmn-js/test/helper');
  *
- * var fs = require('fs').default;
+ * var fs = require('fs');
  *
  * // insert diagram.css
  * TestHelper.insertCSS('diagram.css', fs.readFileSync('some-css.css', 'utf8'));

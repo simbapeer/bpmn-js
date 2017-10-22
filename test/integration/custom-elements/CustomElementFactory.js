@@ -1,24 +1,24 @@
 'use strict';
 
-var assign = require('lodash-es/assign').default,
-    inherits = require('inherits');
+var assign = require('lodash-es/assign').default;
 
 var BpmnElementFactory = require('../../../lib/features/modeling/ElementFactory').default,
     LabelUtil = require('../../../lib/util/LabelUtil').default;
 
 
-function CustomElementFactory(injector) {
-  injector.invoke(BpmnElementFactory, this);
+class CustomElementFactory extends BpmnElementFactory {
 
-  var self = this;
+  constructor(bpmnFactory, moddle, translate) {
+    super(bpmnFactory, moddle, translate);
+  }
 
-  this.create = function(elementType, attrs) {
+  create(elementType, attrs) {
     var type = attrs.type,
         businessObject,
         size;
 
     if (elementType === 'label') {
-      return self.baseCreate(elementType, assign({ type: 'label' }, LabelUtil.DEFAULT_LABEL_SIZE, attrs));
+      return super.create(elementType, assign({ type: 'label' }, LabelUtil.DEFAULT_LABEL_SIZE, attrs));
     }
 
     if (/^custom\:/.test(type)) {
@@ -26,52 +26,54 @@ function CustomElementFactory(injector) {
 
       businessObject = {};
 
-      size = self._getCustomElementSize(type);
+      size = this._getCustomElementSize(type);
 
-      return self.baseCreate(elementType,
+      return super.create(elementType,
         assign({ type: elementType, businessObject: businessObject }, attrs, size));
     }
 
-    return self.createBpmnElement(elementType, attrs);
-  };
-}
+    return this.createBpmnElement(elementType, attrs);
+  }
 
-inherits(CustomElementFactory, BpmnElementFactory);
+  /**
+   * Sets the *width* and *height* for custom shapes.
+   *
+   * The following example shows an interface on how
+   * to setup the custom element's dimensions.
+   *
+   * @example
+   *
+   *  var shapes = {
+   *     triangle: { width: 40, height: 40 },
+   *     rectangle: { width: 100, height: 20 }
+   *  };
+   *
+   *   return shapes[type];
+   *
+   *
+   * @param  {String} type
+   *
+   * @return {Bounds} { width, height}
+   */
+  _getCustomElementSize(type) {
+    if (!type) {
+      return { width: 100, height: 80 };
+    }
+
+    var shapes = {
+      triangle: { width: 40, height: 40 },
+      circle: { width: 140, height: 140 }
+    };
+
+    return shapes[type];
+  }
+
+}
 
 module.exports = CustomElementFactory;
 
-CustomElementFactory.$inject = [ 'injector' ];
-
-
-/**
- * Sets the *width* and *height* for custom shapes.
- *
- * The following example shows an interface on how
- * to setup the custom element's dimensions.
- *
- * @example
- *
- *  var shapes = {
- *     triangle: { width: 40, height: 40 },
- *     rectangle: { width: 100, height: 20 }
- *  };
- *
- *   return shapes[type];
- *
- *
- * @param  {String} type
- *
- * @return {Bounds} { width, height}
- */
-CustomElementFactory.prototype._getCustomElementSize = function(type) {
-  if (!type) {
-    return { width: 100, height: 80 };
-  }
-
-  var shapes = {
-    triangle: { width: 40, height: 40 },
-    circle: { width: 140, height: 140 }
-  };
-
-  return shapes[type];
-};
+CustomElementFactory.$inject = [
+  'bpmnFactory',
+  'moddle',
+  'translate'
+];
